@@ -1,0 +1,52 @@
+{
+  "root": "apps/nestjs-crud",
+  "sourceRoot": "apps/nestjs-crud/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/nestjs-crud",
+        "main": "apps/nestjs-crud/src/main.ts",
+        "tsConfig": "apps/nestjs-crud/tsconfig.app.json",
+        "assets": ["apps/nestjs-crud/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/nestjs-crud/src/environments/environment.ts",
+              "with": "apps/nestjs-crud/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "nestjs-crud:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nestjs-crud/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/nestjs-crud"],
+      "options": {
+        "jestConfig": "apps/nestjs-crud/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

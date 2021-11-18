@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "nestjs-crud": "apps/nestjs-crud"
+  }
+}
