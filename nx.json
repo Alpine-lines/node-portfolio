@@ -31,20 +31,29 @@
   },
   "project": {
     "express-auth0-mongoose": {
-       "root": "apps/express-auth0-mongoose/",
+      "root": "apps/express-auth0-mongoose/",
       "sourceRoot": "apps/express-auth0-mongoose",
-      "projectType": "application"
+      "projectType": "application",
+      "targets": {},
+      "tags": [],
+      "implicitDependencies": []
     },
     "gig-labor-api": {
       "root": "apps/gig-labor-api",
       "sourceRoot": "app/gig-labor-api/src",
-      "projectType": "application"
+      "projectType": "application",
+      "targets": {},
+      "tags": [],
+      "implicitDependencies": []
     },
     "rxjs-rest": {
       "root": "libs/rxjs-rest",
       "sourceRoot": "libs/rxjs-rest",
-      "projectType": "library"
+      "projectType": "library",
+      "targets": {},
+      "tags": [],
+      "implicitDependencies": []
     }
-  }
+  },
   "defaultProject": "nestjs-crud"
 }
