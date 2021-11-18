@@ -1,0 +1,20 @@
+{
+  "root": "apps/express-auth0-mongoose",
+  "sourceRoot": "apps/express-auth0-mongoose/app",
+  "projectType": "application",
+  "targets": {
+    "serve:ui": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "express-auth0-mongoose:ui"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "express-auth0-mongoose:dev"
+      }
+    }
+  },
+  "tags": []
+}

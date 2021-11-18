@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "7e1903f6-ef09-47a7-881a-e7058c255e5a",
+		"name": "NodeJS-Auth0-Passport Template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ping"
+					]
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Tutorial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Example C\",\n    \"description\": \"Lorem ipsum...\",\n    \"published\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutorials"
+					]
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tutorials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tutorial By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutorials/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutorials",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "607b2e3deb01fdeaff7c7b00"
+						}
+					]
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		},
+		{
+			"name": "Update Tutorial By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutorials/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutorials",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "607b2e3deb01fdeaff7c7b00"
+						}
+					]
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tutorial By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutorials/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutorials",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "607b2e3deb01fdeaff7c7b00"
+						}
+					]
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All Tutorials",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutorials"
+					]
+				},
+				"description": "Test route only."
+			},
+			"response": []
+		}
+	]
+}
