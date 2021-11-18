@@ -1,0 +1,6 @@
+{
+  "root": "apps/rxjs-rest",
+  "sourceRoot": "apps/rxjs-rest",
+  "projectType": "lib",
+  "tags": []
+}
