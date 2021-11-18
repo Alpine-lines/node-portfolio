@@ -1,0 +1,14 @@
+[submodule "rxjs"]
+    path = "./libs/rxjs-rest"
+    url = https://github.com/Alpine-lines/node-portfolio.git
+    ignore = dirty
+
+[submodule "express-auth0-mongoose"]
+    path = "./apps/express-auth0-mongoose"
+    url = https://github.com/Alpine-lines/node-portfolio.git
+    ignore = dirty
+
+[submodule "gig-labor-api"]
+    path = "./apps/gig-labor-api"
+    url = https://github.com/Alpine-lines/node-portfolio.git
+    ignore = dirty
