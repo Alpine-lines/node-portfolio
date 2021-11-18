@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "nestjs-crud": "apps/nestjs-crud"
+    "nestjs-crud": "apps/nestjs-crud",
+    "express-auth0-mongoose": "apps/express-auth0-mongoose",
+    "gig-labor-api": "apps/gig-labor-api"
   }
 }
